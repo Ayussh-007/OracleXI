@@ -37,6 +37,7 @@ from gui.widgets import (
 from utils.constants import (
     APP_NAME,
     APP_SUBTITLE,
+    APP_VERSION,
     MIN_HEIGHT,
     MIN_WIDTH,
     PAGE_ICONS,
@@ -178,7 +179,7 @@ class OracleXIApp:
 
         tk.Label(
             title_frame,
-            text="v1.0",
+            text=f"v{APP_VERSION}",
             font=FONTS["caption"],
             fg=COLORS["text_muted"],
             bg=COLORS["bg_secondary"],

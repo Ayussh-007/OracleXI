@@ -184,8 +184,9 @@ class ComparePage(tk.Frame):
                     res = self.engine.predict_cricket(t1, t2)
                 self.after(0, self._render_results, res)
             except Exception as e:
-                logger.error(f"Prediction failed: {e}")
-                self.after(0, lambda: messagebox.showerror("Error", str(e)))
+                err_msg = str(e)
+                logger.error(f"Prediction failed: {err_msg}")
+                self.after(0, lambda msg=err_msg: messagebox.showerror("Prediction Error", msg))
             finally:
                 self.after(0, self._prediction_done)
 
