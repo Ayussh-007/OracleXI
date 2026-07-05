@@ -450,7 +450,7 @@ class DataEngine:
         """Get head-to-head statistics between two football teams."""
         df = self.load_football_data()
         if df.empty:
-            return {"matches": 0, "t1_wins": 0, "t2_wins": 0, "draws": 0}
+            return {"matches": 0, "t1_wins": 0, "t2_wins": 0, "draws": 0, "t1_win_pct": 0.0, "t2_win_pct": 0.0}
 
         h2h = df[
             ((df["home_team"] == t1) & (df["away_team"] == t2))
@@ -458,7 +458,7 @@ class DataEngine:
         ]
 
         if h2h.empty:
-            return {"matches": 0, "t1_wins": 0, "t2_wins": 0, "draws": 0}
+            return {"matches": 0, "t1_wins": 0, "t2_wins": 0, "draws": 0, "t1_win_pct": 0.0, "t2_win_pct": 0.0}
 
         t1_wins = 0
         t2_wins = 0
@@ -490,7 +490,7 @@ class DataEngine:
         """Get head-to-head statistics between two cricket teams."""
         match_df, _ = self.load_cricket_data()
         if match_df.empty:
-            return {"matches": 0, "t1_wins": 0, "t2_wins": 0}
+            return {"matches": 0, "t1_wins": 0, "t2_wins": 0, "t1_win_pct": 0.0, "t2_win_pct": 0.0}
 
         h2h = match_df[
             ((match_df["team1"] == t1) & (match_df["team2"] == t2))
@@ -498,7 +498,7 @@ class DataEngine:
         ]
 
         if h2h.empty:
-            return {"matches": 0, "t1_wins": 0, "t2_wins": 0}
+            return {"matches": 0, "t1_wins": 0, "t2_wins": 0, "t1_win_pct": 0.0, "t2_win_pct": 0.0}
 
         t1_wins = len(h2h[h2h["winner"] == t1])
         t2_wins = len(h2h[h2h["winner"] == t2])
