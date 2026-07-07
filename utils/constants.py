@@ -126,38 +126,30 @@ SPORTS: List[str] = ["Football", "Cricket"]
 # Football Teams – International
 # ─────────────────────────────────────────────
 FOOTBALL_INTERNATIONAL: List[str] = [
-    "Argentina", "Australia", "Belgium", "Brazil", "Colombia",
-    "Croatia", "Denmark", "Ecuador", "England", "France",
-    "Germany", "Ghana", "Iran", "Italy", "Japan",
-    "Mexico", "Morocco", "Netherlands", "Nigeria", "Poland",
-    "Portugal", "Saudi Arabia", "Senegal", "Serbia", "South Korea",
-    "Spain", "Switzerland", "Tunisia", "United States", "Uruguay",
-    "Wales", "Cameroon", "Canada", "Costa Rica", "Qatar",
-    "India", "China", "Egypt", "Algeria", "Chile",
-    "Paraguay", "Peru", "Sweden", "Norway", "Czech Republic",
-    "Turkey", "Russia", "Ukraine", "Scotland", "Ireland",
+    "Algeria", "Argentina", "Australia", "Austria", "Belgium", "Brazil", 
+    "Cameroon", "Canada", "Chile", "China", "Colombia", "Costa Rica", 
+    "Croatia", "Czech Republic", "Denmark", "Ecuador", "Egypt", "England", 
+    "France", "Germany", "Ghana", "India", "Iran", "Ireland", "Italy", 
+    "Japan", "Mexico", "Morocco", "Netherlands", "Nigeria", "Norway", 
+    "Paraguay", "Peru", "Poland", "Portugal", "Qatar", "Russia", 
+    "Saudi Arabia", "Scotland", "Senegal", "Serbia", "South Korea", "Spain", 
+    "Sweden", "Switzerland", "Tunisia", "Turkey", "Ukraine", "United States", 
+    "Uruguay", "Wales"
 ]
 
 # ─────────────────────────────────────────────
 # Football Teams – Clubs (Top Leagues)
 # ─────────────────────────────────────────────
 FOOTBALL_CLUBS: List[str] = [
-    # Premier League
-    "Manchester City", "Arsenal", "Liverpool", "Manchester United",
-    "Chelsea", "Tottenham", "Newcastle United", "Aston Villa",
-    "Brighton", "West Ham",
-    # La Liga
-    "Real Madrid", "Barcelona", "Atletico Madrid", "Real Sociedad",
-    "Villarreal", "Athletic Bilbao", "Sevilla", "Real Betis",
-    # Bundesliga
-    "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen",
-    # Serie A
-    "Inter Milan", "AC Milan", "Juventus", "Napoli", "Roma", "Lazio",
-    # Ligue 1
-    "Paris Saint-Germain", "Marseille", "Monaco", "Lyon",
-    # Other
-    "Ajax", "Benfica", "Porto", "Celtic", "Rangers",
-    "Galatasaray", "Fenerbahce", "Flamengo", "River Plate", "Boca Juniors",
+    "AC Milan", "Ajax", "Arsenal", "Aston Villa", "Athletic Bilbao",
+    "Atletico Madrid", "Barcelona", "Bayer Leverkusen", "Bayern Munich",
+    "Benfica", "Boca Juniors", "Borussia Dortmund", "Brighton", "Celtic",
+    "Chelsea", "Everton", "Fenerbahce", "Flamengo", "Galatasaray",
+    "Inter Milan", "Juventus", "Lazio", "Liverpool", "Lyon",
+    "Manchester City", "Manchester United", "Marseille", "Monaco", "Napoli",
+    "Newcastle United", "Paris Saint-Germain", "Porto", "RB Leipzig", "Rangers",
+    "Real Betis", "Real Madrid", "Real Sociedad", "River Plate", "Roma",
+    "Sevilla", "Tottenham", "Villarreal", "West Ham"
 ]
 
 FOOTBALL_TEAMS: List[str] = sorted(set(FOOTBALL_INTERNATIONAL + FOOTBALL_CLUBS))
@@ -181,22 +173,20 @@ FOOTBALL_TOURNAMENTS: List[str] = [
 # Cricket Teams – IPL
 # ─────────────────────────────────────────────
 CRICKET_IPL_TEAMS: List[str] = [
-    "Mumbai Indians", "Chennai Super Kings",
-    "Royal Challengers Bangalore", "Kolkata Knight Riders",
-    "Delhi Capitals", "Punjab Kings",
-    "Rajasthan Royals", "Sunrisers Hyderabad",
-    "Gujarat Titans", "Lucknow Super Giants",
+    "Chennai Super Kings", "Delhi Capitals", "Gujarat Titans",
+    "Kolkata Knight Riders", "Lucknow Super Giants", "Mumbai Indians",
+    "Punjab Kings", "Rajasthan Royals", "Royal Challengers Bangalore",
+    "Sunrisers Hyderabad"
 ]
 
 # ─────────────────────────────────────────────
 # Cricket Teams – International
 # ─────────────────────────────────────────────
 CRICKET_INTERNATIONAL: List[str] = [
-    "India", "Australia", "England", "South Africa",
-    "New Zealand", "Pakistan", "Sri Lanka", "West Indies",
-    "Bangladesh", "Afghanistan", "Zimbabwe", "Ireland",
-    "Netherlands", "Scotland", "Nepal", "Namibia",
-    "Oman", "UAE", "USA", "Canada",
+    "Afghanistan", "Australia", "Bangladesh", "Canada", "England",
+    "India", "Ireland", "Namibia", "Nepal", "Netherlands", "New Zealand",
+    "Oman", "Pakistan", "Scotland", "South Africa", "Sri Lanka", "UAE",
+    "USA", "West Indies", "Zimbabwe"
 ]
 
 CRICKET_TEAMS: List[str] = sorted(set(CRICKET_IPL_TEAMS + CRICKET_INTERNATIONAL))
